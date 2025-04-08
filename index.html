@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <style>
+        .gallery-item { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">Image Gallery</h1>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button class="btn btn-primary filter-btn" data-category="nature">Nature</button>
+                <button class="btn btn-primary filter-btn" data-category="architecture">Architecture</button>
+                <button class="btn btn-primary filter-btn" data-category="all">Show All</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 gallery-item" data-category="nature">
+                <img src="nature1.jpg" class="img-fluid" alt="Nature">
+            </div>
+            <div class="col-md-4 gallery-item" data-category="architecture">
+                <img src="architecture1.jpg" class="img-fluid" alt="Architecture">
+            </div>
+            <div class="col-md-4 gallery-item" data-category="nature">
+                <img src="nature2.jpg" class="img-fluid" alt="Nature">
+            </div>
+            <!-- Add more items -->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
